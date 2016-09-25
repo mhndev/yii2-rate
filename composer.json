@@ -1,0 +1,29 @@
+{
+  "name": "mhndev/yii2-rate",
+  "description": "Yii2 Multi Purpose Rate System (Supports like, dislike, rate with other numbers or text) ",
+  "keywords": ["Rate","Rank","Like", "Dislike" , "Unlike", "yii", "yii2"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "majid abdolhosseini",
+      "email": "majid.a@mabna.com",
+      "homepage":"http://mhndev.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "mhndev\\yii2Rate\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+
+
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": ">=2.0.5",
+    "mhndev/rate":"0.1.*"
+  }
+
+}
