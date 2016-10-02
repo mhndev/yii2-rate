@@ -22,13 +22,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 Either run
 
-```
+```php
 composer require --prefer-dist mhndev/yii2-rate "0.0.*"
 ```
 
 or add
 
-```
+```php
 "mhndev/yii2-rate": "0.0.*"
 ```
 
@@ -37,7 +37,7 @@ or add
 ### create config file
 then of all you need to create a configuration file in your yii2 project config directory called rate.php and fill it like following :
 
-```
+```php
 
 return [
     'userClass' => \app\models\User::class,
@@ -73,14 +73,14 @@ you can specify possible rate values for an entity
 
 
 and after that your user class you should implement following interface
-```
+```php
 mhndev\rate\Interfaces\iUser
 
 ```
 and add the following method for rate functionality persistence.
 you can change it as your project needs.
 
-```
+```php
     /**
      * @param $value
      * @param iRateableEntity $entity
@@ -110,7 +110,7 @@ you can change it as your project needs.
 ### Like
 This is a sample code which uses this package :
 
-```
+```php
     $post = Post::findOne(1);
     $user = Yii::$app->user->identity;
     $user->like($post);
@@ -118,7 +118,7 @@ This is a sample code which uses this package :
 
 ### Rate
 
-```
+```php
     $post = Post::findOne(1);
     $user = Yii::$app->user->identity;
     $user->rate(+2, $post, 'rate');
