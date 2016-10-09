@@ -23,7 +23,7 @@
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": ">=2.0.5",
-    "mhndev/rate":"0.1.*"
+    "mhndev/rate":"1.*"
   }
 
 }
